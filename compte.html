@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue</title>
+  <link rel="stylesheet" href="css/compte.css">
+  
+  
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-left">CATALOGUE</a>
+  </nav>
+
+ <div class="ajouter-produit">
+  <form id="ajoutForm" class="form-ajout" enctype="multipart/form-data">
+    <h1><span>AJOUTER</span>UN PRODUIT</h1>
+
+    <input type="text" id="nom" placeholder="Nom du produit" />
+    <input type="text" id="pointures" placeholder="Pointures disponibles" />
+    <input type="number" id="prix" placeholder="Prix" />
+
+    <label for="productImage">
+      <div class="image-upload" id="uploadTrigger">
+        <div class="plus">+</div>
+        <div>Ajouter une photo</div>
+      </div>
+    </label>
+    <input type="file" id="productImage" accept="image/*" hidden />
+
+    <button type="submit">PUBLIER</button>
+  </form>
+
+  <div class="preview-produit" id="previewCard">
+    <img id="previewImage" src="" alt="Aperçu du produit" style="display: none;" />
+    <h3 id="previewName">Nom du produit</h3><p id="previewDescription">Your description text</p>
+    <p><strong id="previewPrice">Prix €</strong></p>
+    
+  </div>
+
+  <section class="section-produits">
+  <h2>Produits publiés</h2>
+  <div id="produitsListe" class="grille-produits">
+  </div>
+</section>
+
+  
+  </div>
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/compte.js" defer></script>
+</body>
+</html>

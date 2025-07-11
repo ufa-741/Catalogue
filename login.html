@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-left">CATALOGUE</a>
+   
+  </nav>
+
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="txt" placeholder="Nom d'utilisateur" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="pswd" placeholder="Mot de passe" required>
+        <button>Créer un compte</button>
+      </form>
+    </div>
+
+    <div class="log">
+  <form id="loginForm">
+    <label for="chk" aria-hidden="true">Login</label>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="pswd" placeholder="Mot de passe" required>
+    <button>Login</button>
+  </form>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/login.js" defer></script>
+</body>
+</html>
